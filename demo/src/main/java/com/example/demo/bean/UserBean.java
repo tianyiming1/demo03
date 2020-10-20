@@ -6,6 +6,23 @@ public class UserBean {
     private String password;
     private String status;
 
+    public UserBean(int id, String name, String password, String status) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "UserBean{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", status='" + status + '\'' +
+                '}';
+    }
+
     public String getStatus() {
         return status;
     }
